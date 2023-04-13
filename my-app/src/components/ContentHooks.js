@@ -6,7 +6,6 @@ import Loader from './Loader'
 
 function ContentHooks() {
 
-
     const [isLoaded, setIsLoaded] = useState(false);
     const [fetchedPosts, setFetchedPosts] = useState([]);
 
@@ -44,7 +43,6 @@ function ContentHooks() {
                 </div>
 
                 <div className={css.SearchResults}>
-
                     {
                     isLoaded ? (
                         <PostItem savedPosts={fetchedPosts} />
